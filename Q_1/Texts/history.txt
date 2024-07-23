@@ -1,0 +1,65 @@
+    1  > ~/.bash_history
+    2  history
+    3  clear
+    4  git clone git@github.com:mryam11/LinuxExam.git
+    5  cd LinuxExam/
+    6  mkdir Q_{1..3}
+    7  mkdir Downloads
+    8  touch Q_{1..3}/._q{1..3}
+    9  git add *
+   10  git commit -m " Initialized Master"
+   11  git checkout -b Br_1Q
+   12  touch Q_1/out.txt
+   13  vim Q_1/out.txt
+   14  date
+   15  vim Q_1/out.txt
+   16  cat /etc/lsb-release 
+   17  vim Q_1/out.txt
+   18  cat Q_1/out.txt
+   19  git add Q_1/out.txt
+   20  git commit -m "out.txt header added "
+   21  git push
+   22  git push --set-upstream origin Br_1Q
+   23  wget https://github.com/Telhai-Git/BioExam/archive/refs/tags/examfiles.tar.gz
+   24  tar -xzvf examfiles.tar.gz 
+   25  ls
+   26  cd BioExam-examfiles/
+   27  ls
+   28  mv * ../Downloads/
+   29  cd ..
+   30  ls
+   31  rm -rf BioExam-examfiles/
+   32  rm -rf examfiles.tar.gz 
+   33  ls Downloads >> Q_1/out.txt 
+   34  echo "-----------------" >> Q_1/out.txt
+   35  git add * 
+   36  git commit -m  "Downloaded Files"
+   37  git push
+   38  ls
+   39  mkdir Q_1/Images
+   40  ls
+   41  cd Q_1/
+   42  ls
+   43  cd Images/
+   44  cp ../../Downloads/*.jpg .
+   45  cd ..
+   46  mkdir Texts
+   47  cp ../Downloads/*.txt Texts/
+   48  mv Texts/f1.txt Texts/file1.txt
+   49  cd Texts/
+   50  ls
+   51  cat file1.txt >> ../out.txt 
+   52  cd ../..
+   53  git add *
+   54  git commit -m "Update Q_1"
+   55  cd Q_1/Texts/
+   56  ls
+   57  touch gitlog.log
+   58  git history > gitlog.log
+   59  git log > gitlog.log
+   60  cat gitlog.log 
+   61  git branch
+   62  git checkout main
+   63  git merge Br_1Q
+   64  touch history.txt
+   65  history > history.txt 
