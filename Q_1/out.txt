@@ -1,0 +1,4 @@
+Date: Tue Jul 23 08:17:37 UTC 2024
+User : mryam
+Output Path: Q_1/out.txt
+Current Linux Version: "Ubuntu 22.04.4 LTS"
